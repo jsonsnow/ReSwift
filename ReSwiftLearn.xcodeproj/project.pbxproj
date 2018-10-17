@@ -14,6 +14,21 @@
 		BA71B89F2176E78C00F4CA68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA71B89D2176E78C00F4CA68 /* LaunchScreen.storyboard */; };
 		BA71B8AA2176E78C00F4CA68 /* ReSwiftLearnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8A92176E78C00F4CA68 /* ReSwiftLearnTests.swift */; };
 		BA71B8B52176E78C00F4CA68 /* ReSwiftLearnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8B42176E78C00F4CA68 /* ReSwiftLearnUITests.swift */; };
+		BA71B8C32176EAC100F4CA68 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA71B8C22176EAC000F4CA68 /* Alamofire.framework */; };
+		BA71B8C52176EAC700F4CA68 /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA71B8C42176EAC700F4CA68 /* ReSwift.framework */; };
+		BA71B8C721770D6000F4CA68 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8C621770D6000F4CA68 /* AppRouter.swift */; };
+		BA71B8CA21770E6300F4CA68 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8C921770E6300F4CA68 /* AppState.swift */; };
+		BA71B8CD21770EE800F4CA68 /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8CC21770EE800F4CA68 /* AppReducer.swift */; };
+		BA71B8CF2177122800F4CA68 /* MenuState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8CE2177122800F4CA68 /* MenuState.swift */; };
+		BA71B8D12177129100F4CA68 /* MenuReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8D02177129100F4CA68 /* MenuReducer.swift */; };
+		BA71B8D32177140E00F4CA68 /* RoutingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8D22177140E00F4CA68 /* RoutingState.swift */; };
+		BA71B8D52177147000F4CA68 /* RoutingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8D42177147000F4CA68 /* RoutingReducer.swift */; };
+		BA71B8D72177301C00F4CA68 /* CategoriesState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8D62177301C00F4CA68 /* CategoriesState.swift */; };
+		BA71B8D9217731DA00F4CA68 /* CategoriesReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8D8217731DA00F4CA68 /* CategoriesReducer.swift */; };
+		BA71B8DC2177342900F4CA68 /* RoutingAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8DB2177342900F4CA68 /* RoutingAction.swift */; };
+		BA71B8DE2177346200F4CA68 /* ChangeCategoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8DD2177346200F4CA68 /* ChangeCategoryAction.swift */; };
+		BA71B8E1217734D100F4CA68 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8E0217734D100F4CA68 /* TableDataSource.swift */; };
+		BA71B8E42177365400F4CA68 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8E32177365400F4CA68 /* MenuTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +62,21 @@
 		BA71B8B02176E78C00F4CA68 /* ReSwiftLearnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReSwiftLearnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA71B8B42176E78C00F4CA68 /* ReSwiftLearnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReSwiftLearnUITests.swift; sourceTree = "<group>"; };
 		BA71B8B62176E78C00F4CA68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA71B8C22176EAC000F4CA68 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		BA71B8C42176EAC700F4CA68 /* ReSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReSwift.framework; path = Carthage/Build/iOS/ReSwift.framework; sourceTree = "<group>"; };
+		BA71B8C621770D6000F4CA68 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		BA71B8C921770E6300F4CA68 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BA71B8CC21770EE800F4CA68 /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
+		BA71B8CE2177122800F4CA68 /* MenuState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuState.swift; sourceTree = "<group>"; };
+		BA71B8D02177129100F4CA68 /* MenuReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuReducer.swift; sourceTree = "<group>"; };
+		BA71B8D22177140E00F4CA68 /* RoutingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingState.swift; sourceTree = "<group>"; };
+		BA71B8D42177147000F4CA68 /* RoutingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingReducer.swift; sourceTree = "<group>"; };
+		BA71B8D62177301C00F4CA68 /* CategoriesState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesState.swift; sourceTree = "<group>"; };
+		BA71B8D8217731DA00F4CA68 /* CategoriesReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesReducer.swift; sourceTree = "<group>"; };
+		BA71B8DB2177342900F4CA68 /* RoutingAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutingAction.swift; sourceTree = "<group>"; };
+		BA71B8DD2177346200F4CA68 /* ChangeCategoryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCategoryAction.swift; sourceTree = "<group>"; };
+		BA71B8E0217734D100F4CA68 /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		BA71B8E32177365400F4CA68 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA71B8C32176EAC100F4CA68 /* Alamofire.framework in Frameworks */,
+				BA71B8C52176EAC700F4CA68 /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +109,8 @@
 		BA71B8882176E78A00F4CA68 = {
 			isa = PBXGroup;
 			children = (
+				BA71B8C42176EAC700F4CA68 /* ReSwift.framework */,
+				BA71B8C22176EAC000F4CA68 /* Alamofire.framework */,
 				BA71B8932176E78A00F4CA68 /* ReSwiftLearn */,
 				BA71B8A82176E78C00F4CA68 /* ReSwiftLearnTests */,
 				BA71B8B32176E78C00F4CA68 /* ReSwiftLearnUITests */,
@@ -97,7 +131,13 @@
 		BA71B8932176E78A00F4CA68 /* ReSwiftLearn */ = {
 			isa = PBXGroup;
 			children = (
+				BA71B8E22177362E00F4CA68 /* ViewCtrs */,
+				BA71B8DF217734B700F4CA68 /* DataSources */,
+				BA71B8DA2177341400F4CA68 /* Actions */,
+				BA71B8CB21770ECA00F4CA68 /* Reducers */,
+				BA71B8C821770E4C00F4CA68 /* State */,
 				BA71B8942176E78A00F4CA68 /* AppDelegate.swift */,
+				BA71B8C621770D6000F4CA68 /* AppRouter.swift */,
 				BA71B8962176E78A00F4CA68 /* ViewController.swift */,
 				BA71B8982176E78A00F4CA68 /* Main.storyboard */,
 				BA71B89B2176E78C00F4CA68 /* Assets.xcassets */,
@@ -123,6 +163,53 @@
 				BA71B8B62176E78C00F4CA68 /* Info.plist */,
 			);
 			path = ReSwiftLearnUITests;
+			sourceTree = "<group>";
+		};
+		BA71B8C821770E4C00F4CA68 /* State */ = {
+			isa = PBXGroup;
+			children = (
+				BA71B8C921770E6300F4CA68 /* AppState.swift */,
+				BA71B8CE2177122800F4CA68 /* MenuState.swift */,
+				BA71B8D22177140E00F4CA68 /* RoutingState.swift */,
+				BA71B8D62177301C00F4CA68 /* CategoriesState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		BA71B8CB21770ECA00F4CA68 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				BA71B8CC21770EE800F4CA68 /* AppReducer.swift */,
+				BA71B8D02177129100F4CA68 /* MenuReducer.swift */,
+				BA71B8D42177147000F4CA68 /* RoutingReducer.swift */,
+				BA71B8D8217731DA00F4CA68 /* CategoriesReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		BA71B8DA2177341400F4CA68 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				BA71B8DB2177342900F4CA68 /* RoutingAction.swift */,
+				BA71B8DD2177346200F4CA68 /* ChangeCategoryAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		BA71B8DF217734B700F4CA68 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				BA71B8E0217734D100F4CA68 /* TableDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		BA71B8E22177362E00F4CA68 /* ViewCtrs */ = {
+			isa = PBXGroup;
+			children = (
+				BA71B8E32177365400F4CA68 /* MenuTableViewController.swift */,
+			);
+			path = ViewCtrs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +343,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA71B8CF2177122800F4CA68 /* MenuState.swift in Sources */,
 				BA71B8972176E78A00F4CA68 /* ViewController.swift in Sources */,
+				BA71B8E42177365400F4CA68 /* MenuTableViewController.swift in Sources */,
 				BA71B8952176E78A00F4CA68 /* AppDelegate.swift in Sources */,
+				BA71B8C721770D6000F4CA68 /* AppRouter.swift in Sources */,
+				BA71B8CA21770E6300F4CA68 /* AppState.swift in Sources */,
+				BA71B8CD21770EE800F4CA68 /* AppReducer.swift in Sources */,
+				BA71B8D9217731DA00F4CA68 /* CategoriesReducer.swift in Sources */,
+				BA71B8E1217734D100F4CA68 /* TableDataSource.swift in Sources */,
+				BA71B8D32177140E00F4CA68 /* RoutingState.swift in Sources */,
+				BA71B8DC2177342900F4CA68 /* RoutingAction.swift in Sources */,
+				BA71B8D72177301C00F4CA68 /* CategoriesState.swift in Sources */,
+				BA71B8D52177147000F4CA68 /* RoutingReducer.swift in Sources */,
+				BA71B8D12177129100F4CA68 /* MenuReducer.swift in Sources */,
+				BA71B8DE2177346200F4CA68 /* ChangeCategoryAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +534,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TST4LEUS93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReSwiftLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +556,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TST4LEUS93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReSwiftLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
