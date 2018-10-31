@@ -28,6 +28,10 @@
 		BA71B8DE2177346200F4CA68 /* ChangeCategoryAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8DD2177346200F4CA68 /* ChangeCategoryAction.swift */; };
 		BA71B8E1217734D100F4CA68 /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8E0217734D100F4CA68 /* TableDataSource.swift */; };
 		BA71B8E42177365400F4CA68 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8E32177365400F4CA68 /* MenuTableViewController.swift */; };
+		BA91CDC92189DBA000A63065 /* SetCardsAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA91CDC82189DBA000A63065 /* SetCardsAction.swift */; };
+		BA91CDCB2189DC8B00A63065 /* FlipCardAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA91CDCA2189DC8B00A63065 /* FlipCardAction.swift */; };
+		BA91CDCD2189DDA200A63065 /* GameReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA91CDCC2189DDA200A63065 /* GameReducer.swift */; };
+		BA91CDCF2189E41F00A63065 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA91CDCE2189E41F00A63065 /* GameViewController.swift */; };
 		BA9823F8217839E700935E2F /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9823F7217839E700935E2F /* CollectionDataSource.swift */; };
 		BA9823FA21783C2500935E2F /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9823F921783C2500935E2F /* GameState.swift */; };
 		BA9823FD217858ED00935E2F /* iTunesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA9823FC217858ED00935E2F /* iTunesApi.swift */; };
@@ -100,6 +104,10 @@
 		BA71B8DD2177346200F4CA68 /* ChangeCategoryAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCategoryAction.swift; sourceTree = "<group>"; };
 		BA71B8E0217734D100F4CA68 /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		BA71B8E32177365400F4CA68 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		BA91CDC82189DBA000A63065 /* SetCardsAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetCardsAction.swift; sourceTree = "<group>"; };
+		BA91CDCA2189DC8B00A63065 /* FlipCardAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipCardAction.swift; sourceTree = "<group>"; };
+		BA91CDCC2189DDA200A63065 /* GameReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameReducer.swift; sourceTree = "<group>"; };
+		BA91CDCE2189E41F00A63065 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		BA9823F7217839E700935E2F /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		BA9823F921783C2500935E2F /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		BA9823FC217858ED00935E2F /* iTunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesApi.swift; sourceTree = "<group>"; };
@@ -217,6 +225,7 @@
 				BA71B8D02177129100F4CA68 /* MenuReducer.swift */,
 				BA71B8D42177147000F4CA68 /* RoutingReducer.swift */,
 				BA71B8D8217731DA00F4CA68 /* CategoriesReducer.swift */,
+				BA91CDCC2189DDA200A63065 /* GameReducer.swift */,
 			);
 			path = Reducers;
 			sourceTree = "<group>";
@@ -227,6 +236,8 @@
 				BA71B8DB2177342900F4CA68 /* RoutingAction.swift */,
 				BA71B8DD2177346200F4CA68 /* ChangeCategoryAction.swift */,
 				BABFBADB2189C4FD0070B6F8 /* FethTunesAction.swift */,
+				BA91CDC82189DBA000A63065 /* SetCardsAction.swift */,
+				BA91CDCA2189DC8B00A63065 /* FlipCardAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -245,6 +256,7 @@
 			children = (
 				BA71B8E32177365400F4CA68 /* MenuTableViewController.swift */,
 				BA9823FE21785B5E00935E2F /* CategoriesTableViewController.swift */,
+				BA91CDCE2189E41F00A63065 /* GameViewController.swift */,
 			);
 			path = ViewCtrs;
 			sourceTree = "<group>";
@@ -400,11 +412,14 @@
 				BA71B8972176E78A00F4CA68 /* ViewController.swift in Sources */,
 				BA71B8E42177365400F4CA68 /* MenuTableViewController.swift in Sources */,
 				BA71B8952176E78A00F4CA68 /* AppDelegate.swift in Sources */,
+				BA91CDCF2189E41F00A63065 /* GameViewController.swift in Sources */,
 				BA71B8C721770D6000F4CA68 /* AppRouter.swift in Sources */,
+				BA91CDCD2189DDA200A63065 /* GameReducer.swift in Sources */,
 				BA71B8CA21770E6300F4CA68 /* AppState.swift in Sources */,
 				BA71B8CD21770EE800F4CA68 /* AppReducer.swift in Sources */,
 				BA71B8D9217731DA00F4CA68 /* CategoriesReducer.swift in Sources */,
 				BABFBADC2189C4FD0070B6F8 /* FethTunesAction.swift in Sources */,
+				BA91CDC92189DBA000A63065 /* SetCardsAction.swift in Sources */,
 				BA9823FA21783C2500935E2F /* GameState.swift in Sources */,
 				BA71B8E1217734D100F4CA68 /* TableDataSource.swift in Sources */,
 				BA71B8D32177140E00F4CA68 /* RoutingState.swift in Sources */,
@@ -415,6 +430,7 @@
 				BA9823F8217839E700935E2F /* CollectionDataSource.swift in Sources */,
 				BA71B8D52177147000F4CA68 /* RoutingReducer.swift in Sources */,
 				BA71B8D12177129100F4CA68 /* MenuReducer.swift in Sources */,
+				BA91CDCB2189DC8B00A63065 /* FlipCardAction.swift in Sources */,
 				BA71B8DE2177346200F4CA68 /* ChangeCategoryAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -595,7 +611,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiclicai.UMService.ReSwiftLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -617,7 +633,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiclicai.UMService.ReSwiftLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

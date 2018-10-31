@@ -12,7 +12,7 @@ import ReSwift
 public func fetchTunes(state: AppState, store: Store<AppState>) -> FetchTunesAction {
     
     ItunesApi.searchFor(category: state.categoriesState.currentCategorySelected) { urls in
-        store.dispatch()
+        store.dispatch(SetCardsAction(cardImageUrls: urls))
         
     }
     return FetchTunesAction()
