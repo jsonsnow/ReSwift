@@ -37,6 +37,7 @@
 		BA98240321785F9500935E2F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA71B8C22176EAC000F4CA68 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BA98240521785F9800935E2F /* ReSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA71B8C42176EAC700F4CA68 /* ReSwift.framework */; };
 		BA98240621785F9800935E2F /* ReSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA71B8C42176EAC700F4CA68 /* ReSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BABFBADC2189C4FD0070B6F8 /* FethTunesAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABFBADB2189C4FD0070B6F8 /* FethTunesAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		BA9823FC217858ED00935E2F /* iTunesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesApi.swift; sourceTree = "<group>"; };
 		BA9823FE21785B5E00935E2F /* CategoriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewController.swift; sourceTree = "<group>"; };
 		BA98240021785E6100935E2F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BABFBADB2189C4FD0070B6F8 /* FethTunesAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FethTunesAction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -224,6 +226,7 @@
 			children = (
 				BA71B8DB2177342900F4CA68 /* RoutingAction.swift */,
 				BA71B8DD2177346200F4CA68 /* ChangeCategoryAction.swift */,
+				BABFBADB2189C4FD0070B6F8 /* FethTunesAction.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				BA71B8CA21770E6300F4CA68 /* AppState.swift in Sources */,
 				BA71B8CD21770EE800F4CA68 /* AppReducer.swift in Sources */,
 				BA71B8D9217731DA00F4CA68 /* CategoriesReducer.swift in Sources */,
+				BABFBADC2189C4FD0070B6F8 /* FethTunesAction.swift in Sources */,
 				BA9823FA21783C2500935E2F /* GameState.swift in Sources */,
 				BA71B8E1217734D100F4CA68 /* TableDataSource.swift in Sources */,
 				BA71B8D32177140E00F4CA68 /* RoutingState.swift in Sources */,
