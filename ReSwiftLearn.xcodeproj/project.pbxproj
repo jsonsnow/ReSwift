@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA525335218A9451001CB8D8 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA525334218A9451001CB8D8 /* CardCollectionViewCell.swift */; };
+		BA525337218A9873001CB8D8 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA525336218A9873001CB8D8 /* Kingfisher.framework */; };
+		BA525338218A994F001CB8D8 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA525336218A9873001CB8D8 /* Kingfisher.framework */; };
+		BA525339218A994F001CB8D8 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BA525336218A9873001CB8D8 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BA52533B218A9A22001CB8D8 /* MemoryGameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52533A218A9A22001CB8D8 /* MemoryGameLogic.swift */; };
 		BA71B8952176E78A00F4CA68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8942176E78A00F4CA68 /* AppDelegate.swift */; };
 		BA71B8972176E78A00F4CA68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA71B8962176E78A00F4CA68 /* ViewController.swift */; };
 		BA71B89C2176E78C00F4CA68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA71B89B2176E78C00F4CA68 /* Assets.xcassets */; };
@@ -69,6 +74,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				BA98240321785F9500935E2F /* Alamofire.framework in Embed Frameworks */,
+				BA525339218A994F001CB8D8 /* Kingfisher.framework in Embed Frameworks */,
 				BA98240621785F9800935E2F /* ReSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -77,6 +83,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BA525334218A9451001CB8D8 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		BA525336218A9873001CB8D8 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		BA52533A218A9A22001CB8D8 /* MemoryGameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGameLogic.swift; sourceTree = "<group>"; };
 		BA71B8912176E78A00F4CA68 /* ReSwiftLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReSwiftLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA71B8942176E78A00F4CA68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA71B8962176E78A00F4CA68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,9 +130,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA525337218A9873001CB8D8 /* Kingfisher.framework in Frameworks */,
 				BA71B8C32176EAC100F4CA68 /* Alamofire.framework in Frameworks */,
 				BA98240521785F9800935E2F /* ReSwift.framework in Frameworks */,
 				BA98240221785F9500935E2F /* Alamofire.framework in Frameworks */,
+				BA525338218A994F001CB8D8 /* Kingfisher.framework in Frameworks */,
 				BA71B8C52176EAC700F4CA68 /* ReSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,9 +156,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA525333218A940F001CB8D8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA525334218A9451001CB8D8 /* CardCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		BA71B8882176E78A00F4CA68 = {
 			isa = PBXGroup;
 			children = (
+				BA525336218A9873001CB8D8 /* Kingfisher.framework */,
 				BA71B8C42176EAC700F4CA68 /* ReSwift.framework */,
 				BA71B8C22176EAC000F4CA68 /* Alamofire.framework */,
 				BA71B8932176E78A00F4CA68 /* ReSwiftLearn */,
@@ -170,6 +190,7 @@
 		BA71B8932176E78A00F4CA68 /* ReSwiftLearn */ = {
 			isa = PBXGroup;
 			children = (
+				BA525333218A940F001CB8D8 /* Views */,
 				BA9824072178687F00935E2F /* Coordinators */,
 				BA9823FB217858D500935E2F /* Netwoking */,
 				BA71B8E22177362E00F4CA68 /* ViewCtrs */,
@@ -238,6 +259,7 @@
 				BABFBADB2189C4FD0070B6F8 /* FethTunesAction.swift */,
 				BA91CDC82189DBA000A63065 /* SetCardsAction.swift */,
 				BA91CDCA2189DC8B00A63065 /* FlipCardAction.swift */,
+				BA52533A218A9A22001CB8D8 /* MemoryGameLogic.swift */,
 			);
 			path = Actions;
 			sourceTree = "<group>";
@@ -345,6 +367,7 @@
 				TargetAttributes = {
 					BA71B8902176E78A00F4CA68 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					BA71B8A42176E78C00F4CA68 = {
 						CreatedOnToolsVersion = 10.0;
@@ -413,6 +436,7 @@
 				BA71B8E42177365400F4CA68 /* MenuTableViewController.swift in Sources */,
 				BA71B8952176E78A00F4CA68 /* AppDelegate.swift in Sources */,
 				BA91CDCF2189E41F00A63065 /* GameViewController.swift in Sources */,
+				BA52533B218A9A22001CB8D8 /* MemoryGameLogic.swift in Sources */,
 				BA71B8C721770D6000F4CA68 /* AppRouter.swift in Sources */,
 				BA91CDCD2189DDA200A63065 /* GameReducer.swift in Sources */,
 				BA71B8CA21770E6300F4CA68 /* AppState.swift in Sources */,
@@ -421,6 +445,7 @@
 				BABFBADC2189C4FD0070B6F8 /* FethTunesAction.swift in Sources */,
 				BA91CDC92189DBA000A63065 /* SetCardsAction.swift in Sources */,
 				BA9823FA21783C2500935E2F /* GameState.swift in Sources */,
+				BA525335218A9451001CB8D8 /* CardCollectionViewCell.swift in Sources */,
 				BA71B8E1217734D100F4CA68 /* TableDataSource.swift in Sources */,
 				BA71B8D32177140E00F4CA68 /* RoutingState.swift in Sources */,
 				BA9823FF21785B5E00935E2F /* CategoriesTableViewController.swift in Sources */,
@@ -611,7 +636,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiclicai.UMService.ReSwiftLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -633,7 +658,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.weiclicai.UMService.ReSwiftLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

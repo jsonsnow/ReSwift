@@ -9,9 +9,9 @@
 import Foundation
 import ReSwift
 
-public func fetchTunes(state: AppState, store: Store<AppState>) -> FetchTunesAction {
+func fetchTunes(state: AppState, store: Store<AppState>) -> FetchTunesAction {
     
-    ItunesApi.searchFor(category: state.categoriesState.currentCategorySelected) { urls in
+    ItunesApi.searchFor(category: state.categoriesState.currentCategorySelected.rawValue) { urls in
         store.dispatch(SetCardsAction(cardImageUrls: urls))
         
     }

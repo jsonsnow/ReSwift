@@ -11,17 +11,17 @@ import ReSwift
 
 func gameReducer(action: Action, state: GameState?) -> GameState {
     var state = state ?? GameState(memoryCards: [], showLoading: false, gameFinshed: false)
-    
     switch action {
     case _ as FetchTunesAction:
         state = GameState(memoryCards: [], showLoading: true, gameFinshed: false)
     case let setCardsAction as SetCardsAction:
-        state.memoryCards = []
+        state.memoryCards = generateNewCards(with: setCardsAction.cardImageUrls)
         state.showLoading = false
-    case let filpCardAction as FilpCardAction
-        state.memoryCards = []
-        state.gameFinshed = true
-    default:
+    case  let flipCardAction as FilpCardAction:
+        state.memoryCards = flipCard(index: flipCardAction.cardIndexToFlip, memoryCards: state.memoryCards)
+        state.gameFinshed = hasFinishedGame(cards: state.memoryCards)
+    default: break
         
     }
+    return state
 }
