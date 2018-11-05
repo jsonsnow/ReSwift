@@ -11,16 +11,17 @@ import ReSwift
 
 class GameViewController: UIViewController {
 
-    var collectionDataSource: CollectionDataSource<UICollectionViewCell,MemoryCard>?
-    var collectionView:UICollectionView!
-    var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    var collectionDataSource: CollectionDataSource<CardCollectionViewCell,MemoryCard>?
+    @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         store.dispatch(fetchTunes)
         collectionView.delegate = self
         loadingIndicator.hidesWhenStopped = true
-        collectionDataSource = CollectionDataSource(cellIdentifier: "dddd", models: [], configureCell) { cell, modle in
+        collectionDataSource = CollectionDataSource(cellIdentifier: "CardCell", models: []) { cell, modle in
+            cell.configureCell(with: modle)
             return cell
         }
         collectionView.dataSource = collectionDataSource
@@ -49,6 +50,7 @@ class GameViewController: UIViewController {
     fileprivate func showGameFinshedAlert() {
         let alertController = UIAlertController.init(title: "Congratulations !", message: "You've finished the game!", preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alertController.addAction(defaultAction)
         present(alertController, animated: true, completion: nil)
     }
 }

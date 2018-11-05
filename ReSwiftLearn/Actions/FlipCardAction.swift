@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import ReSwift
 
 struct FilpCardAction: Action {
     let cardIndexToFlip:Int

@@ -82,6 +82,12 @@ ViewController则彻底改变成了一个个独立的个体，其只负责：
 4. Reducer:一个接收当前App state和Action,返回新的App state的小函数
 
 
+#### Reswift缓存处理
+缓存让reducer去考虑，store只是从reducers中拿数据，然后放到内存里，本事没有任何业务逻辑。
+
+业务数据一般保存在具体的state中，action描述了如何更改state并携带相关数据。
+
+
 
 
 
